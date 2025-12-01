@@ -12,4 +12,4 @@ sine=frequency=2620:duration=0.125[s9];
 sine=frequency=2800:duration=0.125[s10];
 [s1][s2][s3][s4][s5][s6][s7][s8][s9][s10]amix=inputs=10[audio_tones];
 [0:a][audio_tones]amix=inputs=2:weights=1 0.02:duration=first[a]
-" -map "[v]" -map "[a]" -c:v mpeg2video -b:v 6M -c:a aac -shortest output.mp4
+" -map "[v]" -map "[a]" -c:v mpeg2video -b:v 16M -c:a aac -shortest output.mp4
